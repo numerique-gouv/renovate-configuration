@@ -22,9 +22,10 @@
     ],
     "prConcurrentLimit": 2,
     "prHourlyLimit": 2,
-    "prCreation": "immediate",
+    "prCreation": "not-pending",
+    "schedule": ["before 7am on monday"],
     "semanticCommits": "disabled",
     "separateMajorMinor": false,
-    "updateNotScheduled": true,
-    "rebaseWhen": "behind-base-branch"
+    "updateNotScheduled": false,
+    "rebaseWhen": "conflicted"
   }
