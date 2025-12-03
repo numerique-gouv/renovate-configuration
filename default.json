@@ -11,13 +11,16 @@
         "groupName": "js dependencies",
         "matchManagers": ["npm"],
         "schedule": ["before 7am on monday"],
-        "matchPackagePatterns": ["*"]
+        "matchPackagePatterns": ["*"],
+        "minimumReleaseAge": "7 days",
+        "internalChecksFilter": "strict"
       },
       {
         "groupName": "python dependencies",
         "matchManagers": ["setup-cfg", "pep621"],
         "schedule": ["before 7am on monday"],
-        "matchPackagePatterns": ["*"]
+        "matchPackagePatterns": ["*"],
+        "minimumReleaseAge": "7 days"
       }
     ],
     "prConcurrentLimit": 2,
